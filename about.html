@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+</head>
+<body>
+    <header id="header">
+      <div id="all-page-links">
+         <div id="bars">
+        <button id="menu-button"><i class="fa-solid fa-bars"></i></button>
+      </div>
+      <div id="menu-item-list">
+        <button id="menu-hide-button"><i class="fa-solid fa-xmark"></i></button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+        <a href="index.html" id="h1-link"><h1>Wordly</h1></a>
+        <a href="index.html" id="history-page-link" class="page-link">Home</a>
+        <a href="history.html" id="about-page-link" class="page-link">History</a>
+      </div>
+    </header>
+   
+    <!-- Introduction section -->
+   <h1>About Wordly</h1>
+   <div class="about-container">
+   <section class="intro">
+        <h2>Welcome to Wordly!</h2>
+        <p>Wordly is your go-to online dictionary designed to help you explore and understand words with ease. Whether you're a language learner, a writer, or simply curious about words, Wordly provides quick access to accurate definitions, example sentences, phonetic transcriptions, and native pronunciation. It's a tool built for everyone who loves language!</p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Word Search:</strong> Simply type in any word to get its meaning, usage, and more.</li>
+            <li><strong>Example Sentences:</strong> View curated example sentences to understand word usage in context.</li>
+            <li><strong>Phonetic Transcriptions:</strong> See the correct pronunciation with easy-to-read phonetic symbols.</li>
+            <li><strong>Audio Pronunciation:</strong> Listen to the word being pronounced by native speakers to perfect your accent.</li>
+            <li><strong>Offline History:</strong> Easily access your search history even when you're offline.</li>
+        </ul>
+    </section>
+
+    <!-- Mission Statement Section -->
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>At Wordly, our mission is simple: to make language learning accessible, enjoyable, and effective. We want to provide people with the right tools to understand, use, and appreciate the richness of language. With accurate definitions, detailed pronunciations, and helpful examples, Wordly aims to enhance your vocabulary and communication skills, whether you're a beginner or a seasoned wordsmith.</p>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <p>Getting started with Wordly is easy! Here’s how it works:</p>
+        <ul>
+            <li>Type any word into the search bar.</li>
+            <li>Get the word’s meaning, example sentences, phonetic transcription, and audio pronunciation.</li>
+            <li>Access your recent search history, even without an internet connection, through our offline feature!</li>
+        </ul>
+        <p>It’s that simple — and packed with all the tools you need to improve your language skills!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feedback, or suggestions, we’d love to hear from you!</p>
+        <ul>
+            <li><b>Email: </b><a href="mailto:wordly025@gmail.com">wordly025@gmail.com</a></li>
+        </ul>
+    </section>
+   </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Wordly. All rights reserved.</p>
+    </footer>
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu-item-list');
+        const menuHideButton = document.getElementById('menu-hide-button');
+
+        // Add click event listener to the button
+        menuButton.addEventListener('click', function() {
+            menu.classList.add('active'); // Toggle the "active" class on the menu
+        }); 
+        menuHideButton.addEventListener('click', function() {
+            menu.classList.remove('active');
+        });
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #1a1a1a;
+    /* line-height: 1.6; */
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.history-main-container {
+    margin-top: 20px;
+    /* margin: 0 auto; */
+    margin-left: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+    padding: 20px;
+    min-height: 80vh;  
+}
+
+/* Word Container Styles */
+.word-container {
+    width: 30.5vw;
+    /* width: calc(30vw - 20px); */
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Important for positioning delete button */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    /* margin: 10px;
+    float: left; */
+}
+
+.word-container:hover{
+    transform: scale(1.03);
+    z-index: 1;
+}
+
+.wordPara{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.remove-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    color: rgb(95, 93, 93);
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.remove-button:hover {
+    background-color: rgb(178, 175, 175);
+    color: #fff;
+}
+
+/* Phonetic Item Styles */
+.phonetic-and-audio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Each-phonetic-and-audio{
+    margin-top: 10px;
+    background-color: #f8f8f8;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px; */
+}
+
+
+.phonetic-text {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.audio-play-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    background-color: #e6e9ec;
+    color: rgb(59, 57, 57);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.audio-play-button:hover {
+    background-color: #7d8083;
+}
+
+/* Meaning Box Styles */
+.meaning-box {
+    font-size: 0.9rem;
+    margin: 10px 0 15px 0;
+
+}
+
+.meaning-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.meaning-box li {
+    margin-bottom: 10px;
+}
+
+.meaning-box li:first-child {
+    font-weight: bold;
+}
+
+.example-para{
+    font-style: italic;
+}
+
+footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px 0; 
+    font-size: 14px; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    .history-main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Word Container Styles */
+    .word-container {
+        width: 100%;
+    }
+
+    .wordPara{
+        font-size: 1.1rem;
+    }
+
+    /* Phonetic Item Styles */
+    .phonetic-and-audio {
+        gap: 7px;
+    }
+
+    .phonetic-text {
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+
+    .audio-play-button {
+        font-size: 0.7rem;
+    }
+
+    /* Meaning Box Styles */
+    .meaning-box {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 680px) {
+    h2 {
+        font-size: 25px;
+    }
+
+    .history-main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Word Container Styles */
+    .word-container {
+        width: 100%;
+    }
+}
+
+@media (min-width:681px)and (max-width: 900px) {
+    h2 {
+        font-size: 25px;
+    }
+
+    /* Word Container Styles */
+    .word-container {
+        width: 43vw;
+    }
+   
+}  
+
+@media (min-width: 901px) and (max-width: 1199px) {
+    h2 {
+        font-size: 25px;
+    }
+
+    /* Word Container Styles */
+    .word-container {
+        width: 28vw;
+    }
+
+    .wordPara{
+        font-size: 1.3rem;
+    }
+
+    /* Phonetic Item Styles */
+    .phonetic-and-audio {
+        gap: 7px;
+    }
+
+    .phonetic-text {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .audio-play-button {
+        font-size: 0.8rem;
+    }
+
+    /* Meaning Box Styles */
+    .meaning-box {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .word-container {
+        width: 28vw;
+    }
+}
+
+

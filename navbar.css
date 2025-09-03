@@ -1,0 +1,251 @@
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 25vw;
+    background-color: rgb(5, 194, 194);
+    /* background-color: rgba(134, 132, 132, 0.5); */
+    padding: 20px 0;
+
+}
+
+#all-page-links{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: row;
+}
+
+
+#menu-button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: #333;
+  cursor: pointer;
+  padding: 5px;
+  /* display: none; */
+}
+
+#menu-button:hover{
+    color: #555;
+    background-color: rgba(134, 132, 132, 0.4);
+    border-radius: 10px; 
+}
+
+/* Menu Styling */
+#menu-item-list {
+  position: fixed;
+  top: 0;
+  left: -130px; /* Hidden off-screen initially */
+  width: 130px;
+  box-shadow: 0 1px 2px rgba(171, 167, 167, 0.7);
+  border-bottom-right-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  z-index: 10;
+
+}
+
+#menu-hide-button{
+    font-size: 20px;
+    position: absolute;
+    right: 13px;
+    margin-top: 7px;
+    padding: 3px;
+    background: none;
+    border: none;
+}
+
+#menu-hide-button:hover{
+    color: #555;
+    background-color: rgba(134, 132, 132, 0.4);
+    border-radius: 10px;
+}
+
+#menu-item-list ul {
+  list-style: none;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+#menu-item-list ul li {
+  margin: 15px 0 5px 20px;
+
+}
+
+#menu-item-list ul li a {
+  color: rgb(36, 112, 112);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+}
+
+#menu-item-list ul li a:hover{
+    color: #555;
+    background-color: rgba(134, 132, 132, 0.4);
+    border-radius: 5px; 
+}
+
+/* Show Menu on Toggle */
+#menu-item-list.active {
+  transform: translateX(130px); /* Slide the menu in from the left */
+}
+
+header h1 {
+    font-size: 36px; 
+    font-weight: 700;
+    color: #2c3e50; 
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#h1-link {
+    text-decoration: none;
+}
+
+.page-link {
+    font-size: 16px;
+    color: #333;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.page-link:hover {
+    color: #555;
+    background-color: rgba(134, 132, 132, 0.4);
+    border-radius: 5px; 
+}
+
+#input-box-and-button {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+#input-box-and-button:hover{
+    background-color: white;
+}
+
+#word-input-box {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 25vw;
+}
+
+.search-button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.search-button i {
+    transition: transform 0.3s ease;
+}
+
+.search-button:hover i {
+    transform: scale(1.3);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    header {
+        gap: 5vw;
+        padding: 15px 0;
+    }
+
+    #menu-button {
+        font-size: 15px;
+        /* display: inline-block; */
+    }
+
+    #all-page-links{
+        margin-left: 10px;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 20px; 
+    }
+
+    .page-link {
+        display: none;
+    }
+
+    #word-input-box {
+        font-size: 12px;
+        width: 35vw;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        gap: 10vw;
+        padding: 15px 0;
+    }
+
+    #menu-button {
+        font-size: 20px;
+    }
+
+    #all-page-links{
+        margin-left: 10px;
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 30px; 
+    }
+
+    .page-link {
+        display: none;
+    }
+
+    #word-input-box {
+        font-size: 14px;
+        width: 35vw;
+    }
+ 
+}
+
+@media (min-width:769px)and (max-width: 1199px) {
+    header {
+        gap: 12vw;
+        padding: 20px 0;
+    }
+
+    #menu-button {
+        font-size: 25px;
+    }
+
+    #all-page-links{
+        margin-left: 10px;
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 30px; 
+    }
+
+    #word-input-box {
+        font-size: 14px;
+        width: 35vw;
+    }  
+   
+}  
+
+     

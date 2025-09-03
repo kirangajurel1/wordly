@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history</title>
+    <link rel="stylesheet" href="history.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+</head>
+<body>
+    <header id="header">
+    <div id="all-page-links">
+        <div id="bars">
+        <button id="menu-button"><i class="fa-solid fa-bars"></i></button>
+      </div>
+      <div id="menu-item-list">
+        <button id="menu-hide-button"><i class="fa-solid fa-xmark"></i></button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+        <a href="index.html" id="h1-link"><h1>Wordly</h1></a>
+        <a href="index.html" id="home-page-link" class="page-link">Home</a>
+        <a href="about.html" id="about-page-link" class="page-link">About</a>
+    </div>
+
+        <div id="input-box-and-button">
+            <input type="text" placeholder="Search History" id="word-input-box">
+            <button id="history-search-button" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+
+    <h2>History</h2>
+    <div class="history-main-container"></div>
+
+     <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Wordly. All rights reserved.</p>
+    </footer>
+    
+    <script src="history.js"></script>
+
+    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <script>
+      const grid = document.querySelector('.history-main-container');
+      const msnry = new Masonry(grid, {
+        itemSelector: '.word-container',
+        columnWidth: '.word-container',
+        percentPosition: true
+      });
+
+      imagesLoaded(grid, () => {
+        msnry.layout();
+      });
+    </script> -->
+
+    
+</body>
+</html>

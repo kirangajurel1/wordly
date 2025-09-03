@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+</head>
+<body>
+  <header id="header">
+    <div id="all-page-links">
+      <div id="bars">
+        <button id="menu-button"><i class="fa-solid fa-bars"></i></button>
+      </div>
+      <div id="menu-item-list">
+        <button id="menu-hide-button"><i class="fa-solid fa-xmark"></i></button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <a href="index.html" id="h1-link"><h1>Wordly</h1></a>
+      <a href="history.html" id="history-page-link" class="page-link" >History</a>
+      <a href="about.html" id="about-page-link" class="page-link">About</a>
+    </div>
+
+    <div id="input-box-and-button">
+        <input type="text" placeholder="Enter Word" id="word-input-box" required>
+        <button id="meaning-search-button" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </header>
+
+    <div id="main-meaning-box">
+      <!-- <P id="message-box" ></P> -->
+      <p id="word-para"></p>
+      <div id="phonetics-and-audio">  </div>
+
+      <div class="meaning-box">
+        <div id="information-box"></div>
+        <p id="welcome-para">Welcome to wordly</p>
+        <p id="information-message">Discover meanings, example, pronunciation and much more! Simply type a word and explore its full definition.</p>
+        </div>
+      </div>
+
+     <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Wordly. All rights reserved.</p>
+    </footer>
+  
+  <script src="first.js"></script>
+</body>
+</html>
