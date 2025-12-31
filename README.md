@@ -25,4 +25,4 @@ Technologies:
 
 Author:
 Kiran Gajurel
-GitHub: github.com/kirangajurel
+GitHub: github.com/kirangajurel1
